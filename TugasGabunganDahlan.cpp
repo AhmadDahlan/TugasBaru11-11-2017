@@ -123,6 +123,29 @@ break;
 		cout<<"Terima Kasih Telah Menggunakan Program Ini\n";
 		cout<<"Jika Ingin Keluar Tekan Enter"<<endl;
 		break;
+		case 5:
+		cout <<"Perhitungan Gaji Karyawan "<<endl;
+		cout <<"Masukkan Gaji Pokok : Rp. ";cin >>gpkk;
+		cout <<"Masukkan Jam Kerja : ";cin >>jk;
+		lbr=jk-40;
+		gt=(lbr*1.5+40)*gpkk;
+		pjk=gt*0.15;
+		gk=gt-pjk;
+	
+		cout <<"Hasil Perhitungan Gaji"<<endl;
+		cout <<"Gaji Pokok	: Rp. "<<gpkk<<endl;
+		cout <<"Jam Kerja 	: "<<jk<<endl;
+		cout <<"Jam Lembur	: "<<lbr<<endl;
+		cout <<"Gaji sebelum dipotong pajak : Rp. "<<gt<<endl;
+		cout <<"Total Gaji 	: Rp. "<<gk;
+		cout<<"\n";
+		cout<<"Apakah Anda Ingin Kembali ? [Y/T]";cin>>yt;
+		if(yt=='Y'||yt=='y')
+		goto atas;
+		else if(yt=='T'||yt=='t')
+		cout<<"\n";
+		cout<<"Terima Kasih Telah Menggunakan Program Ini\n";
+		cout<<"Jika Ingin Keluar Tekan Enter"<<endl;
 }
 }
 
