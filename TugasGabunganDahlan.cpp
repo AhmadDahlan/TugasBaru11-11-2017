@@ -104,6 +104,25 @@ break;
 		cout<<"Terima Kasih Telah Menggunakan Program Ini\n";
 		cout<<"Jika Ingin Keluar Tekan Enter"<<endl;
 		break;
+		case 4:
+		cout <<"Masukkan Nilai : ";cin >>x;
+	
+		if (x>0){
+		cout <<"Nilai Ini Adalah Positif";
+		}else if (x<0){
+		cout <<"Nilai Ini Adalah Negatif";
+		}else {
+		cout <<"Nilai Ini Adalah Nol";
+		}
+		cout<<"\n";
+		cout<<"Apakah Anda Ingin Kembali ? [Y/T]";cin>>yt;
+		if(yt=='Y'||yt=='y')
+		goto atas;
+		else if(yt=='T'||yt=='t')
+		cout<<"\n";
+		cout<<"Terima Kasih Telah Menggunakan Program Ini\n";
+		cout<<"Jika Ingin Keluar Tekan Enter"<<endl;
+		break;
 }
 }
 
