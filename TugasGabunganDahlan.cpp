@@ -17,4 +17,48 @@ int main(){
 	cout <<"4.Penentuan Nilai\n";
 	cout <<"5.Perhitungan Gaji Karyawan\n";
 	cout <<"Masukan Pilihan Hitungan Yang Anda Inginkan =";cin >>pilihan;
+	
+	switch(pilihan){
+		case 1:
+	cout << "Pilih Bidang [P/S] : ";
+	cin >> bidang;
+
+	if (bidang == 'P' || bidang == 'p') {	
+		cout << "   Mengitung luas persegi panjang \n";	
+		cout << "   Masukkan panjangnya : ";
+		cin >> p;
+		cout << "   Masukkan lebarnya   : ";
+		cin >> l;
+		L = p*l;
+		cout << "   Luas persegi panjang : "<< L ;
+		cout<<"\n Apakah Anda Ingin Kembali ? [Y/T]";cin>>yt;
+		if(yt=='Y'||yt=='y')
+		goto atas;
+		else if(yt=='T'||yt=='t')
+		cout<<"\n";
+		cout<<"Terima Kasih Telah Menggunakan Program Ini\n";
+		cout<<"Jika Ingin Keluar Tekan Enter"<<endl;
+	}
+	else if (bidang == 'S' || bidang == 's') {
+		cout << "   Mengitung luas segitiga \n";	
+		cout << "   Masukkan alasnya   : ";
+		cin >> a;
+		cout << "   Masukkan tingginya : ";
+		cin >> t;
+		L = 0.5*a*t;
+		cout << "   Luas persegi panjang : "<< L;
+		cout<<"\n Apakah Anda Ingin Kembali ? [Y/T]";cin>>yt;
+		if(yt=='Y'||yt=='y')
+		goto atas;
+		else if(yt=='T'||yt=='t')
+		cout<<"\n";
+		cout<<"Terima Kasih Telah Menggunakan Program Ini\n";
+		cout<<"Jika Ingin Keluar Tekan Enter"<<endl;
+	}	
+	else{
+		cout<<"Maaf, Anda Salah Memilih"<<endl;
+	}
+break;
 }
+}
+
