@@ -79,6 +79,31 @@ break;
 		cout<<"Terima Kasih Telah Menggunakan Program Ini\n";
 		cout<<"Jika Ingin Keluar Tekan Enter"<<endl;
 		break;
+		case 3:
+		cout <<"Perhitungan Berat Badan\n";
+		cout <<"Masukkan Berat Badan : ";cin >>berat;
+		cout <<"Masukkan Tinggi Badan : ";cin >>Tinggi;
+	
+		cout <<"Hasil \n";
+		cout <<"Berat badan : "<<berat<<endl;
+		cout <<"Tinggi badan : "<<Tinggi<<endl;
+	
+		if (berat<Tinggi/2.5){
+		cout <<"Anda Underweight";
+		}else if (Tinggi/2.3<berat){
+		cout <<"Anda Overweight";
+		}else if (Tinggi/2.5 <=berat <=Tinggi/2.3){
+		cout <<"Anda Normal";
+		}
+		cout<<"\n";
+		cout<<"Apakah Anda Ingin Kembali ? [Y/T]";cin>>yt;
+		if(yt=='Y'||yt=='y')
+		goto atas;
+		else if(yt=='T'||yt=='t')
+		cout<<"\n";
+		cout<<"Terima Kasih Telah Menggunakan Program Ini\n";
+		cout<<"Jika Ingin Keluar Tekan Enter"<<endl;
+		break;
 }
 }
 
