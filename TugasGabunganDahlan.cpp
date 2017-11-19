@@ -59,6 +59,26 @@ int main(){
 		cout<<"Maaf, Anda Salah Memilih"<<endl;
 	}
 break;
+		case 2:
+		cout <<"Perhitungan Selisih Nilai Absolute"<<endl;
+		cout <<"Masukkan Nilai X	: ";cin>>X;
+		cout <<"Masukkan Nilai Y	: ";cin>>y;
+	
+		if (X>y){
+		w=X-y;
+		}else if (y>X){
+		w=y-X;
+		}
+		cout <<"Hasil : "<<w;
+		cout<<"\n";
+		cout<<"Apakah Anda Ingin Kembali ? [Y/T]";cin>>yt;
+		if(yt=='Y'||yt=='y')
+		goto atas;
+		else if(yt=='T'||yt=='t')
+		cout<<"\n";
+		cout<<"Terima Kasih Telah Menggunakan Program Ini\n";
+		cout<<"Jika Ingin Keluar Tekan Enter"<<endl;
+		break;
 }
 }
 
